@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let w = parseFloat(prompt("nhap vao can nang"));
+        let h = parseFloat(prompt("nhap vao chieu cao"));
+
+        let bmi = w/(h*h);
+        alert(bmi);
+        if(bmi<18){
+            document.write("Underweught");
+        }
+        else if(18 <= bmi && bmi<25){
+            document.write("Nomal");
+        }
+        else if(25<=bmi && bmi <30){
+            document.write("Overweight");
+        }
+        else document.write("Obese");
+    </script>
+</body>
+</html>
